@@ -26,8 +26,8 @@
 <div class='card' > 
     @foreach($NFT['ownedNfts'] as $nft)
     <div class="mainCard">
-        <h1>{{ $nft['metadata']['name'] }}</h1>
-        <h2>{{ $nft['metadata']['description'] }} </h2>
+        <h1>{{ $nft['title']}}</h1>
+        <h2>{{ $nft['description'] }} </h2>
         <img src="{{$nft['media'][0]["gateway"]}}" alt="NFT" srcset="">
     </div>
     @endforeach

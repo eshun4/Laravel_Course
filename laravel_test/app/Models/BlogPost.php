@@ -16,4 +16,9 @@ class BlogPost extends Model
         'content',
     ];
     use HasFactory;
+
+    public function comments(){
+        return $this->hasMany(Comments::class);
+    }
+    
 }
